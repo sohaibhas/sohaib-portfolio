@@ -1,0 +1,141 @@
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+/*===== VARIABLES CSS =====*/
+:root {
+  --header-height: 3rem;
+
+  /*========== Colors ==========*/
+  --first-color: #069C54;
+  --first-color-alt: #e06513;
+  --title-color: #393939;
+  --text-color: #707070;
+  --text-color-light: #A6A6A6;
+  --body-color: #FBFEFD;
+  --container-color: #FFFFFF;
+
+  /*========== Font and typography ==========*/
+  --body-font: 'Poppins', sans-serif;
+  --biggest-font-size: 2.25rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: .75rem;
+
+  /*========== Font weight ==========*/
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+  /*========== Margenes ==========*/
+  --mb-1: .5rem;
+  --mb-2: 1rem;
+  --mb-3: 1.5rem;
+  --mb-4: 2rem;
+  --mb-5: 2.5rem;
+  --mb-6: 3rem;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+@media screen and (min-width: 768px){
+  :root{
+    --biggest-font-size: 4rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+  }
+}
+/*========== LAYOUT ==========*/
+.bd-container{
+  max-width: 960px;
+  width: calc(100% - 2rem);
+  margin-left: var(--mb-2);
+  margin-right: var(--mb-2);
+}
+
+.bd-grid{
+  display: grid;
+  
+}
+
+/*========== HOME ==========*/
+.home__container{
+
+  /* height: calc(100vh - var(--header-height)); */
+  align-content: center;
+}
+
+.home__title{
+
+  font-size: var(--biggest-font-size);
+  color: rgba(88, 104, 46, 0.8);
+  /* margin-bottom: var(--mb-1); */
+}
+
+.home__subtitle{
+
+  font-size: var(--h1-font-size);
+  color: var(--title-color);
+  /* margin-bottom: var(--mb-4); */
+}
+
+.home__img{
+  
+  background-color:rgb(163, 85, 85);
+  border-radius: 1000px;
+  width: 300px;
+  justify-self: center;
+}
+
+/*========== BUTTONS ==========*/
+.button{
+  display: inline-block;
+  background-color: rgba(88, 104, 46, 0.8);
+  color: #FFF;
+  padding: .75rem 1rem;
+  border-radius: .5rem;
+  transition: .3s;
+  font-size:30px;
+  text-decoration: none;
+}
+.button:hover{
+  background-color: var(--first-color-alt);
+}
+/*========== MEDIA QUERIES ==========*/
+@media screen and (min-width: 576px){
+  .home__container{
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+  }
+}
+@media screen and (min-width: 768px){
+  body{
+    margin: 0;
+  }
+  .home__container{
+    height: 100vh;
+    justify-items: center;
+  }
+}
+@media screen and (min-width: 960px){
+  .bd-container{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .home__img{
+    width: 500px;
+  }
+}
+/* For tall screens on mobiles y desktop*/
+@media screen and (min-height: 721px) {
+    .home__container {
+        height: 640px;
+    }
+}

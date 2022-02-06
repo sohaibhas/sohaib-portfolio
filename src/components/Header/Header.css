@@ -1,0 +1,84 @@
+/* CSS Reset */
+body {
+  font-family: "Times New Roman", cursive;
+  color: white;
+  margin: 0px;
+  padding: 0px;
+  /* background: url("https://cdn.pixabay.com/photo/2017/01/09/11/30/dumbbell-1966247_1280.jpg")
+    no-repeat top center/cover; */
+}
+/* Logo, Navbar, button CSS */
+.left {
+  display: inline-block;
+  left: 60px;
+  top: 40px;
+  position: absolute;
+  line-height: 19px;
+  font-size: 25px;
+  text-align: center;
+  color:#4B4A54;
+  /* border: 2px solid red; */
+}
+.left-1{
+    text-decoration: none;
+}
+.mid {
+  display: flex;
+  width: 50%;
+  margin: 30px auto;
+  /* border: 2px solid green; */
+}
+
+.right {
+  display: flex;
+  right: 34px;
+  top: 100px;
+  position: absolute;
+  /* border: 2px solid yellow; */
+}
+.navbar li {
+  display: inline-block;
+  font-size: 20px;
+}
+
+.navbar li a {
+  color: #4B4A54;
+  text-decoration: none;
+  padding: 20px;
+  font-size: 22px;
+}
+
+.navbar li a:hover {
+  color: black;
+  background-color: white;
+  border-radius: 50px;
+}
+
+/* button section */
+.btn {
+  font-family: "Times New Roman", cursive;
+  margin: 0px 9px;
+  padding: 2px 12px;
+  background-color: rgba(63, 60, 60, 0.76);
+  color: white;
+  /* border: 2px solid gray; */
+  border-radius: 10px;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #412728;
+}
+.header{
+    background-color: #A3CFCD;
+    position: relative;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 7.5px;
+  background: rgba(88, 104, 46, 0.8);
+  color: #fff;
+  box-sizing: border-box;
+  border-radius: 40px;
+  box-shadow: 0 3px 5px rgb(221, 220, 220);
+}
